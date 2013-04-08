@@ -84,3 +84,12 @@ span.action.print
 {
   background-image: url('../img/print.gif');
 }
+
+div#versionInfo
+{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  display: none;
+}
