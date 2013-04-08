@@ -1,3 +1,8 @@
+html
+{
+  margin: 0px;
+  padding: 0px;
+}
 body
 {
   width: 100%;
@@ -5,4 +10,77 @@ body
   padding: 0px;
   font-family: "Segoe UI", helvetica, sans-serif;
   font-size: 13pt;
+  background-color: rgb(300, 300, 300);
+  color: #444;
+}
+
+div.header
+{
+  color: #fafafa;
+  background-color: #555;  
+  border-bottom: 2px solid #333;
+  font-size: 2.0em;
+  padding: 15px 10px 15px 10px;
+}
+
+div.header div.headerEmail
+{
+  float: right;
+}
+
+div.header div.headerEmail a,
+div.header div.headerEmail a:visited
+{
+  color: #fbfbfb;
+  font-size: 0.5em;
+}
+
+div.body
+{
+  padding: 10px 10px 10px 10px;
+}
+
+div.body > div.article
+{
+
+}
+
+div.body > div.article > div.title
+{
+  font-size: 120%;
+  padding: 10px 0px 10px 5px;
+  border-bottom: 1px dotted #999;
+}
+
+div.body > div.article > div.title > div.actions
+{
+  float: right;
+}
+
+div.body > div.article > div.content
+{
+  padding: 15px 0px 15px 0px;
+  font-size: 88%;
+  line-height: 142%;
+}
+
+div.body > div.article > div.footer
+{  
+  height: 12px;
+  border-bottom: 1px solid #999;
+}
+
+span.action
+{
+  display: inline-block;
+  width:24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+span.action.print
+{
+  background-image: url('../img/print.gif');
 }
