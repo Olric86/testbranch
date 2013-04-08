@@ -17,7 +17,7 @@ App.Core = (function(){
 
     var div = document.createElement("div");
     div.id = 'versionInfo';
-    div.appendChild(document.createTextNode(version));
+    div.appendChild(document.createTextNode("version: " + version));
 
     document.body.appendChild(div);
     div.style.display = 'block';
