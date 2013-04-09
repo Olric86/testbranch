@@ -1,8 +1,69 @@
+@media screen {
+  div.header
+  {
+    color: #fafafa;
+    background-color: #555;  
+    border-bottom: 2px solid #009ee0;
+    font-size: 2.0em;
+    padding: 15px 10px 15px 10px;
+  }
+
+  div.header div.headerEmail
+  {
+    float: right;
+  }
+
+  div.header div.headerEmail a,
+  div.header div.headerEmail a:visited
+  {
+    color: #fbfbfb;
+    font-size: 0.5em;
+  }
+
+  span.action
+  {
+    display: inline-block;
+    width:24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  div#versionInfo
+  {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    display: none;
+  }
+}
+
+@media print {
+  div.header
+  {
+    display: none;
+  }
+
+  span.action
+  {
+    display: none;
+  }
+
+  div#versionInfo
+  {    
+    display: none;
+    visibility: hidden;
+  }
+}
+
 html
 {
   margin: 0px;
   padding: 0px;
 }
+
 body
 {
   width: 100%;
@@ -12,27 +73,6 @@ body
   font-size: 13pt;
   background-color: rgb(300, 300, 300);
   color: #444;
-}
-
-div.header
-{
-  color: #fafafa;
-  background-color: #555;  
-  border-bottom: 2px solid #009ee0;
-  font-size: 2.0em;
-  padding: 15px 10px 15px 10px;
-}
-
-div.header div.headerEmail
-{
-  float: right;
-}
-
-div.header div.headerEmail a,
-div.header div.headerEmail a:visited
-{
-  color: #fbfbfb;
-  font-size: 0.5em;
 }
 
 div.body
@@ -70,26 +110,8 @@ div.body > div.article > div.footer
   border-bottom: 1px solid #999;
 }
 
-span.action
-{
-  display: inline-block;
-  width:24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  cursor: pointer;
-}
 
 span.action.print
 {
   background-image: url('../img/print.gif');
-}
-
-div#versionInfo
-{
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding: 5px;
-  display: none;
 }

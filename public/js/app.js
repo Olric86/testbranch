@@ -9,7 +9,7 @@ App.Core = (function(){
   var _onPrintActionClicked = function()
   {
     // this = span.action.print
-    // DO PRINT
+    window.print();
   }
 
   var _initEvents = function()
