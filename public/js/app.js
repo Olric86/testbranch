@@ -6,9 +6,16 @@ if (this.App === undefined)
 App.Core = (function(){
   var version = 0.1;
   
+  var _onPrintActionClicked = function()
+  {
+    // this = span.action.print
+    // DO PRINT
+  }
+
   var _initEvents = function()
   {
-
+    var aElements = document.querySelectorAll(".action.print");
+    App.Utils.on(aElements, 'click', _onPrintActionClicked);
   };
 
   var _init = function()
