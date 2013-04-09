@@ -5,19 +5,17 @@ if (this.App === undefined)
 
 App.Core = (function(){
   var version = 0.1;
-  
+
   var _onActionPrintClicked = function()
   {
+    // this = span.action.print
     window.print();
-  };
-  
+  }
+
   var _initEvents = function()
   {
-    var n = document.querySelectorAll(".action.print");
-    for (var i = 0; i < n.length; i++)
-    {
-      n[i].addEventListener('click', _onActionPrintClicked, false);
-    }
+    var aElements = document.querySelectorAll(".action.print");
+    App.Utils.on(aElements, 'click', _onActionPrintClicked);
   };
 
   var _init = function()
