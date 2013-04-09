@@ -6,9 +6,18 @@ if (this.App === undefined)
 App.Core = (function(){
   var version = 0.1;
   
+  var _onActionPrintClicked = function()
+  {
+    window.print();
+  };
+  
   var _initEvents = function()
   {
-
+    var n = document.querySelectorAll(".action.print");
+    for (var i = 0; i < n.length; i++)
+    {
+      n[i].addEventListener('click', _onActionPrintClicked, false);
+    }
   };
 
   var _init = function()
